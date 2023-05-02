@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Recycling e-Waste and Li Batteries</title>
+  </head>
+  <style>
+    table {
+      border: 1px solid;
+      height: 50px;
+      width: 500px;
+    }
+    tr {
+      border: 1px solid;
+    }
+    td {
+      border: 1px solid;
+    }
+    .mainContent {
+    }
+    .row{
+      border: 1px solid;
+    }
+  </style>
+  {% load static %}
+
+  <body>
+    {% csrf_token %}
+    <div class="mainContent row cantainer m-1 text-center rounded-3">
+      <div class="col " style="background-image: url('{% static 'bg.jpg' %}');">
+        
+        <h1><u><b>Recycling e-Waste and Li Batteries</b></u></h1>
+
+        <p>Electronic waste, also known as e-waste, refers to discarded electronic devices such as computers, smartphones, televisions, and other household appliances. These devices often contain hazardous materials such as lead, cadmium, and mercury that can be harmful to the environment and human health if not disposed of properly.</p>
+        <p>Lithium-ion batteries are commonly used in electronic devices due to their high energy density and long lifespan. However, they can also be a source of environmental harm if not recycled properly.</p>
+      </div>
+    </div>
+
+    <div class="row m-1 row cantainer rounded-3">
+      <div class="col p-lg-4"><u>
+        <h2><b>Recycling e-Waste</b></h2></u>
+        <p>The proper disposal of e-waste involves separating materials that can be recycled from those that cannot. Recycling e-waste can help reduce the amount of waste sent to landfills and prevent harmful materials from entering the environment.</p>
+        <p>There are several ways to recycle e-waste:</p>
+        <ul>
+          <li>Take electronic devices to a certified e-waste recycling facility.</li>
+          <li>Participate in e-waste collection events in your community.</li>
+          <li>Contact your local waste management agency for guidance on e-waste disposal.</li>
+        </ul>
+      </div>
+      <div class="col shadow-lg p-4 mb-4 bg-success" style="background-image: url('{% static 'img.jpg' %}');">
+       
+      </div>
+    </div>
+
+    <div class="row cantainer m-1 rounded-3">
+      <div class="col shadow-lg p-4 mb-4 bg-white" style="background-image: url('{% static 'Images/New-Process-Transforms-Lithium-Battery-Recycling_hero.jpg' %}');"></div>
+      <div class="col m-4">
+        <h2><u><b>Recycling Li Batteries</b></u></h2>
+        <p>Lithium-ion batteries are recyclable, but they require special handling due to their chemical composition.</p>
+        <p>The recycling process for Li batteries involves:</p>
+        <ol>
+          <li>Collection of used batteries</li>
+          <li>Transportation to a recycling facility</li>
+          <li>Breaking down the batteries into their component materials, including cobalt, nickel, and lithium</li>
+          <li>Purification of the component materials</li>
+          <li>Reprocessing the materials into new batteries or other products</li>
+        </ol>
+        <p>Recycling Li batteries not only reduces waste but also conserves the valuable materials used in their production.</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <body/>
+</html>
